@@ -1,0 +1,26 @@
+<div class="col-sm-12 text-center" id="top-bar">
+            <img src="/assets/images/burger.png" alt="burger" />
+            <h1> BURGER PLANET! </h1>
+        </div>
+        <div class ="col-sm-6 text-center" class="task">
+            <div class="row">
+                {{#each burgers}}
+                {{#unless this.devoured}}
+                <div class="col-sm-9 text-center">
+
+                    <div>
+                        {{this.id}}.{{this.burger_name}}
+                       <button class="devoured" data-devoured="{{this.devoured}}">Devoured</button>
+                   </div>
+                </div>
+
+                {{/unless}}
+                {{/each}}          
+            </div>
+            <button id="submit">Submit</button>
+
+// need to add more handlebars to get function and add css to design the page. The submit button is 
+not yet functional, but will be with more jquery development. 
+
+
+        </div>
